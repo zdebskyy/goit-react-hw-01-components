@@ -1,0 +1,16 @@
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.listItem {
+  display: flex;
+  width: 320px;
+  box-shadow: 1px 5px 5px grey;
+  margin-bottom: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.listItem:last-child {
+  margin-bottom: 0px;
+}
