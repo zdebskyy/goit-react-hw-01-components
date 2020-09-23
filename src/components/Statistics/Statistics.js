@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./Statistics.module.css";
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul className="stat-list">
+    <section className={styles.section}>
+      <h2 className={styles.sectionTitle}>{title}</h2>
+      <ul className={styles.statList}>
         {stats.map((stat) => (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}</span>
+          <li className={styles.listItem} key={stat.id}>
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage}</span>
           </li>
         ))}
       </ul>
